@@ -1,12 +1,11 @@
-## Welcome to GitHub Pages
+## 林文浩的个人主页
 
-You can use the [editor on GitHub](https://github.com/SenriAkane1/SenriAkane11.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
-
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+### 简单介绍
+学校：福州大学
+学院：软件学院
+专业：软件工程
+学号：222000416
 
 ```markdown
 Syntax highlighted code block
