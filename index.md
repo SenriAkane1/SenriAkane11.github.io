@@ -26,20 +26,18 @@
 <a href="https://www.luogu.com.cn/blog/SenriAkane/solution-cf1601b">CF1601B题解</a><br/>
 <a href="https://www.luogu.com.cn/blog/SenriAkane/solution-cf1552b">CF1552B题解</a><br/>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8" />
-    <title>淡入淡出轮播图</title>
-<!-- css样式 -->
+
+<meta charset="utf-8" />
+<title>淡入淡出轮播图</title>
+
     <style type="text/css">
-        /*清除边距*/
+
         div,ul,li{
             margin: 0;
             padding: 0;
         }
 
-        /*首先准备一个放图片的容器*/
+
         .container{
             width: 500px;
             height: 280px;
@@ -49,19 +47,19 @@
             /*border: 1px solid #ccc;*/
         }
 
-        /*图片样式*/
+
         .container img{
-            position: absolute;        /*把所有图片放在同一个位置*/
+            position: absolute;       
             width: 100%;
-            transition-duration: 1s;    /*设置过渡时间*/
-            opacity: 0;                /*把所有图片变透明*/
-        }
-        /*图片显示开关*/
-        .container img.on{
-            opacity: 1;                /*用于显示图片*/
+            transition-duration: 1s;   
+            opacity: 0;             
         }
 
-        /*左右按钮 按钮用图片更好点,这里为了简便就用大于小于号*/
+        .container img.on{
+            opacity: 1;               
+        }
+
+ 
         .left, .right{
             position: absolute;
             top: 30%;
@@ -73,8 +71,8 @@
             text-align: center;
             font-size: 60px;
             color: #ccc;
-            display: none;    /*先隐藏按钮*/
-            cursor: pointer;    /*设置鼠标悬停时的样式*/
+            display: none;    
+            cursor: pointer;    
         }
         .left{
             left: 0;
@@ -83,13 +81,13 @@
             right: 0;
         }
         .container:hover .left, .container:hover .right{
-            display: block;            /*鼠标悬停才容器范围内时显示按钮*/
+            display: block;           
         }
         .left:hover, .right:hover{
             color: #fff;
         }
 
-        /*焦点*/
+  
         .container ul{
             position: absolute;
             bottom: 0;
@@ -107,22 +105,20 @@
             cursor: pointer;
         }
         .container ul li.active{
-            background-color: #fff;        /*焦点激活时的样式*/
-        }
+            background-color: #fff;      
 
     </style>
 </head>
 <body>
     <div class="container">
-        <!-- 图片 -->
-        <!-- 先把第一张图片显示出来 -->
+
         <img class="on" src="img/1.jpg" />
         <img src="img/2.jpg" />
         <img src="img/3.jpg" />
         <img src="img/4.jpg" />
         <img src="img/5.jpg" />
 
-        <!-- 左右按钮 -->
+ 
         <div class="left"><</div>
         <div class="right">></div>
 
@@ -136,42 +132,37 @@
         </ul>
     </div>
 
-<!-- js部分 -->
+
     <script type="text/javascript">
-        //1、找到container下的所有img标签,li标签,左右按钮
+    
         var aImgs = document.querySelectorAll('.container img');
         var aLis = document.querySelectorAll('.container li');
         var btnLeft = document.querySelector('.container .left');
         var btnRight = document.querySelector('.container .right');
 
-        // //检验是否找到
-        // console.log(aImgs);
-        // console.log(aLis);
-        // console.log(btnLeft);
-        // console.log(btnRight);
+    
 
-        //点击事件
-        //点击按钮图片切换
-        var index = 0;        //当前图片下标
+ 
+        var index = 0;     
         var lastIndex = 0;
         btnRight.onclick = function(){
-            //记录上一张图片的下标
+          
             lastIndex = index;
-            //清除上一张图片的样式
+        
             aImgs[lastIndex].className = '';
             aLis[lastIndex].className = '';
 
             index++;
-            index %= aImgs.length;    //实现周期性变化
-            //设置当前图片的样式
+            index %= aImgs.length;   
+        
             aImgs[index].className = 'on';
             aLis[index].className = 'active';
         }
-        //左边按钮类似
+   
         btnLeft.onclick = function(){
-            //记录上一张图片的下标
+       
             lastIndex = index;
-            //清除上一张图片的样式
+      
             aImgs[lastIndex].className = '';
             aLis[lastIndex].className = '';
 
@@ -179,7 +170,7 @@
             if (index < 0) {
                 index = aImgs.length - 1;
             }
-            //设置当前图片的样式
+           
             aImgs[index].className = 'on';
             aLis[index].className = 'active';
         }
