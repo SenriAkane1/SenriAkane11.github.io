@@ -28,8 +28,8 @@
 -算法与数据结构 
 
 ### codeforce
-username：SenriAkane_0217
-rating:1697
+username：SenriAkane_0217  \
+rating:1697  \
 solved proplem:348
 
 ### 荣誉
