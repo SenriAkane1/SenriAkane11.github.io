@@ -25,12 +25,8 @@
 ### 曾发表的文章
 <a href="https://www.luogu.com.cn/blog/SenriAkane/solution-cf1601b">CF1601B题解</a><br/>
 <a href="https://www.luogu.com.cn/blog/SenriAkane/solution-cf1552b">CF1552B题解</a><br/>
-
-
-
-
-
-    <style type="text/css">
+### 图片
+<style type="text/css">
 
         div,ul,li{
             margin: 0;
