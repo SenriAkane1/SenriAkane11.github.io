@@ -27,8 +27,8 @@
 <a href="https://www.luogu.com.cn/blog/SenriAkane/solution-cf1552b">CF1552B题解</a><br/>
 
 
-<meta charset="utf-8" />
-<title>淡入淡出轮播图</title>
+
+
 
     <style type="text/css">
 
