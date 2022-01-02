@@ -5,14 +5,14 @@
 <table border="0">
   <tr>
     <td width="75%">
-      <h1>张三</h1>
-      <p><b>硕士研究生</b></p>
-      <p><b>××大学××学院</b></p>
-      <p><b>邮箱：1234567789@qq.com</b></p>
-      <p><b>地址：××市××区××路××号××大学，××楼，邮编×××</b></p>
+      <h1>林文浩</h1>
+      <p><b>大学本科</b></p>
+      <p><b>福州大学软件学院</b></p>
+      <p><b>学号：222000416</b></p>
+      <p><b>邮箱：2604951145@qq.com</b></p>
     </td>
     <td width="25%">
-      <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbuyway.hk%2Fimg%2Fpic_22%2F4589565500522.jpg%3Fw%3D655&refer=http%3A%2F%2Fbuyway.hk&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643729126&t=9f7b41658822a5ae8027ba4d225ee8f1" width="100%">      % 插入证件照代码
+      <img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fbuyway.hk%2Fimg%2Fpic_22%2F4589565500522.jpg%3Fw%3D655&refer=http%3A%2F%2Fbuyway.hk&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1643729126&t=9f7b41658822a5ae8027ba4d225ee8f1" width="100%">  
     </td>
   </tr>
 </table>
